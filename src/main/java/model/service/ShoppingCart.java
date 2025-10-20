@@ -11,7 +11,7 @@ public class ShoppingCart {
     }
 
     // подсчет общей суммы товаров без скидки
-    public double GetTotalPriceNoDiscount() {
+    public double getTotalPriceNoDiscount() {
         double result = 0;
         for (Food food : food) {
             result += food.getTotalFood();
@@ -20,7 +20,7 @@ public class ShoppingCart {
     }
 
     // подсчет общей суммы товаров со скидкой
-    public double GetTotalPriceWithDiscount() {
+    public double getTotalPriceWithDiscount() {
         double result = 0;
         for (Food food : food) {
             result += food.getTotalFoodDiscount();
@@ -29,7 +29,7 @@ public class ShoppingCart {
     }
 
     // подсчет суммы всех вегетарианских продуктов без скидки
-    public double GetTotalVeganPriceNoDiscount() {
+    public double getTotalVeganPriceNoDiscount() {
         double result = 0;
         for (Food food : food) {
             if (food.isVegetarian()){
